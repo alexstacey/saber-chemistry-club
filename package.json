@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "saber",
+    "build": "saber build"
+  },
+  "devDependencies": {
+    "saber": "latest",
+    "saber-plugin-feed": "latest",
+    "saber-plugin-query-posts": "latest",
+    "saber-theme-minima": "latest",
+    "stylus": "^0.55.0",
+    "stylus-loader": "^3.0.0"
+  }
+}
