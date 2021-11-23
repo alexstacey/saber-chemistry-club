@@ -1,7 +1,8 @@
 ---
-title: CC023 feat. Haider (Aus)
+title: CC23 feat. Haider (Aus)
 date: 2018-10-31
 layout: post
+location: 'zum bömischen Dorf, Neukölln, Berlin' 
 ---
 
 ### DJs

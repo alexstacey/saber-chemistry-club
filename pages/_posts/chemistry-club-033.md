@@ -1,7 +1,8 @@
 ---
-title: CC033 feat. Suspect & N. A. Wells
+title: CC33 feat. Suspect & N. A. Wells
 date: 2019-10-02
 layout: post
+location: 'zum bömischen Dorf, Neukölln, Berlin' 
 ---
 
 ### DJs

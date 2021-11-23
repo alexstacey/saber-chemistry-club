@@ -340,7 +340,10 @@ table th, table td
 
 .post-link
     display block
-    font-size 24px
+    //font-size 24px
+    &:hover
+        background: rgba($blue, 0.2)
+
 
 .post-header
     margin-bottom 30px
@@ -387,9 +390,17 @@ table th, table td
 .next-party-box
     border: 8px solid $borders
     border-radius: 4px
-    padding: 8px
+    padding: 8px 20px
     background: #111
     margin: 0 0 30px 0
+    h2
+        color: $pink !important
+        margin-bottom: 0
+
+.party-listing
+    h3
+        margin-bottom: 0px
+
 </style>
 
 <template>  
@@ -399,17 +410,21 @@ table th, table td
 
             <slot name="default"></slot>
 
-            <div v-if="page.posts[0].createdAt > new Date()" class="next-party-box">
-                <h2 class="post-list-heading">Next Party - save the date! {{ page.posts[0].foo }}</h2>
-                <span class="post-meta">{{ formatDate(page.posts[0].createdAt) }}</span>
-                    <h3>
-                    <saber-link
-                        class="post-link"
-                        :to="page.posts[0].permalink"
-                    >{{ page.posts[0].title }}</saber-link>
-                    </h3>
+            <!-- Next Party - Save The Date --> 
+            <div v-if="page.posts[0].createdAt > new Date()" class="next-party-box party-listing">
+                <saber-link
+                    class="post-link-foo"
+                    :to="page.posts[0].permalink"
+                >
+                    <h2 class="post-list-heading">&gt;&gt;&gt; Next Party &lt;&lt;&lt;</h2>
+                    <h3>{{ page.posts[0].title }}</h3>
+                    <span class="post-meta">{{ formatDate(page.posts[0].createdAt) }}</span>
+                    <span class="post-meta">@ {{ page.posts[0].location }}</span>
+                </saber-link>
             </div>
             
+            <img alt="First Thursday of the month at Zum bömischen Dorf" src="/cc_header.png">
+
             <h2
                 class="post-list-heading"
                 v-if="page.posts && page.posts.length > 0"
@@ -417,19 +432,20 @@ table th, table td
             
             <ul class="post-list" v-if="page.posts && page.posts.length > 0">
                 <li v-for="post in page.posts" :key="post.permalink" v-if="post.createdAt < new Date()">
-                    <span class="post-meta">{{ formatDate(post.createdAt) }}</span>
-                    <h3>
                     <saber-link
-                        class="post-link"
+                        class="post-link party-listing"
                         :to="post.permalink"
-                    >{{ post.title }}</saber-link>
-                    </h3>
+                    >
+                        <h3>{{ post.title }}</h3>
+                        <span class="post-meta">{{ formatDate(post.createdAt) }}</span>
+                        <span class="post-meta">@ {{ post.location }}</span>
+                    </saber-link>
                 </li>
             </ul>
 
             <div
-            class="pagination"
-            v-if="page.pagination && (page.pagination.hasNext || page.pagination.hasPrev)"
+                class="pagination"
+                v-if="page.pagination && (page.pagination.hasNext || page.pagination.hasPrev)"
             >
                 <router-link
                     class="prev-link"
@@ -443,12 +459,12 @@ table th, table td
                 >Next →</router-link>
             </div>
 
-            <p class="feed-subscribe" v-if="feedLink">
+            <!--p class="feed-subscribe" v-if="feedLink">
                 <svg class="svg-icon orange">
                     <use :xlink:href="getSvg('rss')"></use>
                 </svg>
                 <a :href="feedLink">Subscribe</a>
-            </p>
+            </p-->
         </div>
     </Wrap>
 </template>

@@ -1,7 +1,8 @@
 ---
-title: CC006 feat. S_Ruston (Lecken)
+title: CC06 feat. S_Ruston (Lecken)
 date: 2017-04-06
 layout: post
+location: 'zum bömischen Dorf, Neukölln, Berlin' 
 ---
 
 ### DJs

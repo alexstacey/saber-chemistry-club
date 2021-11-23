@@ -1,7 +1,8 @@
 ---
-title: CC043 Back at the Dorf! feat Haider + Dani Jacques
+title: CC43 Back at the Dorf! feat Haider + Dani Jacques
 date: 2021-11-04
 layout: post
+location: 'zum bömischen Dorf, Neukölln, Berlin' 
 ---
 
 Everyone's favourite Thursday night music and social club is back!

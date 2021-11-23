@@ -1,7 +1,8 @@
 ---
-title: CC007 feat. Jack Haighton (Editions Haighton)
+title: CC07 feat. Jack Haighton (Editions Haighton)
 date: 2017-05-04
 layout: post
+location: 'zum bömischen Dorf, Neukölln, Berlin' 
 ---
 
 ### DJs

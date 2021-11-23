@@ -9,6 +9,7 @@
             :datetime="page.createdAt"
             itemprop="datePublished"
           >{{ formatDate(page.createdAt) }}</time>
+          @ {{ page.location }}
         </p>
       </header>
   
