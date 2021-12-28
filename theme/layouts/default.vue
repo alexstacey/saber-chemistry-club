@@ -438,7 +438,7 @@ table th, table td
                     >
                         <h3>{{ post.title }}</h3>
                         <span class="post-meta">{{ formatDate(post.createdAt) }}</span>
-                        <span class="post-meta">@ {{ post.location }}</span>
+                        <span v-if="post.location" class="post-meta">@ {{ post.location }}</span>
                     </saber-link>
                 </li>
             </ul>
