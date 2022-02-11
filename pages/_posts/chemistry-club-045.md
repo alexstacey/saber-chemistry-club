@@ -20,3 +20,4 @@ This is a 2G+ event, so make sure you bring a same-day negative test result if y
 - bad_dubs
 
 ![CC Embroidery](/CC45.jpg)
+![Kick off your Sunday shoes](/Footloose1984.jpg)
