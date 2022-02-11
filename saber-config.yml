@@ -6,7 +6,7 @@ siteConfig:
   title: Chemistry Club
   url: https://chem.istry.club
   author: bad_dubs
-  email: author@your-domain.com
+  #email: author@your-domain.com
   description: Chemistry Club is a long-running monthly Thursday night party in a bar in Neukölln with a diverse crowd and a freesyle music policy.
 
 themeConfig:
@@ -16,10 +16,10 @@ themeConfig:
     - text: About
       link: /about
   social:
-    twitter: saber_land
-    github: egoist
+    twitter: alexstacey
+    github: alexstacey
     rss: true
-  disqus: chemistry-club
+  #disqus: chemistry-club
 
 plugins:
   - resolve: saber-plugin-query-posts
